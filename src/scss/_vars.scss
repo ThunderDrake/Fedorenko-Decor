@@ -2,7 +2,9 @@
 // colors
 :root {
   // base
-  --font-family: "Open Sans", sans-serif;
+  --font-family-title: "Open Sans", sans-serif;
+  --font-family-text: "Open Sans", sans-serif;
+  --font-color: #FFFFFF;
   --content-width: 1170px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));

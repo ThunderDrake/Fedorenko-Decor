@@ -7,13 +7,14 @@ html {
 *::after {
   box-sizing: inherit;
 }
-body{
-  background-color:  #303030;
+
+body {
+  background-color: var(--color-off-black);
 }
 
 .page {
   height: 100%;
-  font-family: var(--font-family, sans-serif);
+  font-family: var(--font-family-text, sans-serif);
   -webkit-text-size-adjust: 100%;
 }
 
@@ -107,12 +108,4 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
-}
-
-.title-text{
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.small-text{
-  font-family: 'Courier New', Courier, monospace;
 }

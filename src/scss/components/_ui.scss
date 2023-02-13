@@ -1,0 +1,12 @@
+// INFO: Общий файл для стилей UI-kit. Сюда можно заносить стили для разных технических классов.
+// По типу заголовков, кнопок, и тд.
+
+.title-text {
+  margin: 0;
+  font-family: var(--font-family-title);
+  font-weight: 400;
+}
+
+.small-text {
+  font-family: var(--font-family-text);
+}

@@ -4,11 +4,15 @@
   // base
   --font-family-title: "Poiret One", sans-serif;
   --font-family-text: "Nunito", sans-serif;
-  --font-color: #fff;
   --content-width: 1570px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // colors
-  --light-color: #fff;
+  --color-light: #fff;
+  --color-black: #000;
+  --color-accept: #00f0ff;
+  --color-alert: #f93232;
+  --color-off-black: #303030;
+  --color-polite-white: #e9ddd3;
 }

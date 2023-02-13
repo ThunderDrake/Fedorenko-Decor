@@ -147,5 +147,17 @@
       "</div>"
     ],
     "description": "Snippet for basic tabs structure"
+  },
+  "project default button": {
+    "prefix": "p-button",
+    "body": [
+      "<a href=\"$1\" class=\"$2 button btn-reset\">",
+      "  <span class=\"button__text\">$3</span>",
+      "  <svg class=\"button__arrow\" width=\"24\" height=\"24\">",
+      "    <use xlink:href=\"img/sprite.svg#button-arrow\"></use>",
+      "  </svg>",
+      "</a>"
+    ],
+    "description": "Snippet for default project button"
   }
 }

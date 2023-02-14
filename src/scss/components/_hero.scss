@@ -1,42 +1,70 @@
-.hero__flex-container {
-  display: flex;
-  flex-flow: nowrap row;
-  justify-content: space-between;
-  padding-bottom: 100px;
+.hero {
+  &__flex-container {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+    padding-bottom: 100px;
+  }
+
+  &__title {
+    font-size: 64px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-light);
+
+    @media screen and (max-width: 1000px) {
+      font-size: 48px;
+    }
+  }
+
+  &__small-text {
+    max-width: 425px;
+    font-size: 14px;
+    line-height: 250%;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-light);
+
+    @include tablet {
+      font-size: 48px;
+    }
+  }
+
+  &__another-content {
+    position: relative;
+  }
+
+  &__button {
+    position: absolute;
+    left: calc(100% - 300px);
+    top: -88px;
+  }
+
+  &__picture {
+    width: 100%;
+  }
 }
 
-.hero__title {
-  font-size: 64px;
-  line-height: 140%;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--color-light);
+@media screen and (max-width: 1000px) {
+  .hero__small-text {
+    padding-top: 0%;
+  }
+
+  .hero__flex-container {
+    flex-wrap: wrap;
+  }
+
+  .hero__button {
+    left: calc(100vw - 300px);
+  }
+
+  .hero__container {
+    padding-bottom: 65px;
+  }
 }
 
-.hero__small-text {
-  max-width: 425px;
-  font-size: 14px;
-  line-height: 250%;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--color-light);
-}
-
-.hero__another-content {
-  position: relative;
-}
-
-.hero__button {
-  position: absolute;
-  left: calc(100% - 300px);
-  top: -88px;
-}
-
-.hero__picture {
-  width: 100%;
-}
-
-@media screen and (min-width: 320px) and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .hero__flex-container {
     flex-wrap: wrap;
   }
@@ -55,27 +83,5 @@
   .hero__small-text {
     padding-top: 0%;
     font-size: 12px;
-  }
-}
-
-@media screen and (min-width: 601px) and (max-width: 1000px) {
-  .hero__title {
-    font-size: 48px;
-  }
-
-  .hero__small-text {
-    padding-top: 0%;
-  }
-
-  .hero__flex-container {
-    flex-wrap: wrap;
-  }
-
-  .hero__button {
-    left: calc(100vw - 300px);
-  }
-
-  .hero__container {
-    padding-bottom: 65px;
   }
 }

@@ -43,14 +43,14 @@
     transform: translateY(50%);
   }
 
-  &:hover {
+  &:active {
+    background-color: #1f1f1f;
+  }
+
+  @include hover {
     border-color: var(--color-dire-wolf);
     color: var(--color-light);
     background-color: var(--color-dire-wolf);
     transform: rotate(-30deg);
-  }
-
-  &:active {
-    background-color: #1f1f1f;
   }
 }

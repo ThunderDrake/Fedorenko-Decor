@@ -1,0 +1,80 @@
+.direction__container {
+  display: flex;
+  flex-flow: column wrap;
+
+  &__title {
+    margin-bottom: 44px;
+    padding-bottom: 20px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-light);
+
+    @media screen and (min-width: 1400px) {
+      border-bottom: 1px solid var(--color-light);
+    }
+  }
+
+  &__rental,
+  &__marry,
+  &__ivents,
+  &__organization {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--color-light);
+
+    &__text {
+      margin-bottom: 18px;
+      width: 330px;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 37px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-light);
+
+      @media screen and (max-width: 1400px) {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 1400px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  /*
+  &__rental__text,
+  &__marry__text,
+  &__ivents__text,
+  &__organization__text{
+
+  }
+  */
+}
+
+.direction__arrow {
+  fill: var(--color-light);
+}
+
+.marry__picture,
+.ivents__picture,
+.rental__picture,
+.organization__picture {
+  @media screen and (max-width: 1400px) {
+    display: block;
+    width: 100vw;
+  }
+}
+
+picture {
+  display: block;
+  padding-bottom: 0;
+}

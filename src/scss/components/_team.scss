@@ -1,0 +1,45 @@
+.team {
+  &__team-container {
+    &__title-text {
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 52px;
+      letter-spacing: 0.1em;
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+    &__content {
+      &-block{
+
+      }
+
+      &-block {
+        display: flex;
+        flex-direction: column;
+        max-width: 1050px;
+
+        &__text {
+          align-self: flex-end;
+          max-width: 512px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 42px;
+          letter-spacing: 0.15em;
+          text-align: left;
+          text-transform: uppercase;
+        }
+
+        &__year {
+          align-self: flex-start;
+          font-weight: 400;
+          font-size: 40px;
+          line-height: 99px;
+          letter-spacing: 0.05em;
+          text-align: left;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

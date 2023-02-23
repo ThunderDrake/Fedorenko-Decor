@@ -30,9 +30,6 @@
     border-radius: 50%;
     width: 56px;
     height: 56px;
-  }
-
-  &__button {
     cursor: pointer;
 
     &:active {
@@ -132,4 +129,20 @@
 .swiper {
   width: 100%;
   height: 350px;
+}
+
+.swiper-slide {
+  height: min-content;
+}
+
+.swiper__prev,
+.swiper__next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-light);
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
 }

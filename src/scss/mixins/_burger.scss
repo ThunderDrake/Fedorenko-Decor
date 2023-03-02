@@ -1,8 +1,8 @@
 /* stylelint-disable */
 
 @mixin burger {
-  --burger-width: 30px;
-  --burger-height: 30px;
+  --burger-width: 24px;
+  --burger-height: 9px;
   --burger-line-height: 2px;
 
   position: relative;
@@ -37,8 +37,8 @@
     position: absolute;
     left: 0;
     top: 50%;
-    width: 100%;
-    height: var(--burger-line-height);
+    width: 24px;
+    height: 0;
     background-color: currentColor;
     transform: translateY(-50%);
     transition: transform 0.3s ease-in-out;

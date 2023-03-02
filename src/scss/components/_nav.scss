@@ -1,0 +1,17 @@
+.nav {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin: 0 7px;
+  }
+
+  &__link {
+    font-size: 14px;
+  }
+
+  @include tablet {
+    display: none;
+  }
+}

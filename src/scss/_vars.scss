@@ -1,5 +1,5 @@
-// если вы хотите использовать sass-переменные - удалите root
-// colors
+@import "../scss/mixins";
+
 :root {
   // base
   --font-family-title: "Poiret One", sans-serif;
@@ -19,4 +19,12 @@
 
   // transition
   --transition-default: 0.3s ease-in;
+
+  @include small-tablet {
+    --container-offset: 40px;
+  }
+
+  @include mobile {
+    --container-offset: 15px;
+  }
 }

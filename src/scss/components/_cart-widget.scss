@@ -1,0 +1,32 @@
+.cart-widget {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-black);
+    background-color: var(--color-polite-white);
+
+    @include mobile {
+      width: 24px;
+      height: 24px;
+      font-size: 12px;
+    }
+  }
+
+  &__icon {
+    fill: var(--color-light);
+  }
+}

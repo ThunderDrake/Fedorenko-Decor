@@ -30,4 +30,9 @@
       margin-right: 0;
     }
   }
+
+  @include mobile {
+    position: relative;
+    z-index: 2;
+  }
 }

@@ -178,6 +178,12 @@
     background-color: #ffff;
   }
 
+  &__button {
+    @media screen and (max-width: 695px) {
+      align-self: flex-end;
+    }
+  }
+
   &__year,
   &__year_down {
     position: relative;
@@ -190,16 +196,5 @@
     text-align: left;
     text-transform: uppercase;
     color: var(--color-light);
-  }
-}
-
-.button--no-fill {
-  width: 120px;
-  height: 120px;
-  color: #ffff;
-  background-color: var(--color-off-black);
-
-  @media screen and (max-width: 695px) {
-    align-self: flex-end;
   }
 }

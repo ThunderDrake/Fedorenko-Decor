@@ -9,7 +9,8 @@
   }
 
   &__content {
-    padding-left: 25px;
+    display: block;
+    padding-left: 40px;
     cursor: pointer;
 
     &::before {
@@ -17,10 +18,11 @@
       position: absolute;
       left: 0;
       top: 0;
-      border: 1px solid #000;
-      width: 15px;
-      height: 15px;
+      border: 1px solid var(--color-light);
+      width: 24px;
+      height: 24px;
       box-sizing: border-box;
+      border-radius: 2px;
     }
 
     &::after {
@@ -28,12 +30,12 @@
       position: absolute;
       left: 0;
       top: 0;
-      width: 15px;
-      height: 15px;
+      width: 24px;
+      height: 24px;
       box-sizing: border-box;
-      background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='fi_32282' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='405.272px' height='405.272px' viewBox='0 0 405.272 405.272' style='enable-background:new 0 0 405.272 405.272;' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M393.401,124.425L179.603,338.208c-15.832,15.835-41.514,15.835-57.361,0L11.878,227.836 c-15.838-15.835-15.838-41.52,0-57.358c15.841-15.841,41.521-15.841,57.355-0.006l81.698,81.699L336.037,67.064 c15.841-15.841,41.523-15.829,57.358,0C409.23,82.902,409.23,108.578,393.401,124.425z'%3E%3C/path%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='23' height='23' rx='1.5' fill='white' stroke='white'/%3E%3Cpath d='M5 12L9.66667 17L19 7' stroke='%23303030' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E%0A");
       background-position: center;
-      background-size: 10px 10px;
+      background-size: 24px 24px;
       background-repeat: no-repeat;
       opacity: 0;
       transition: opacity 0.3s ease-in-out;
@@ -45,10 +47,10 @@
   opacity: 1;
 }
 
-.custom-checkbox__field:focus + .custom-checkbox__content::before {
-  outline: 2px solid #f00;
-  outline-offset: 2px;
-}
+// .custom-checkbox__field:focus + .custom-checkbox__content::before {
+//   outline: 1px solid rgba(#fff, 0.2);
+//   outline-offset: 1px;
+// }
 
 .custom-checkbox__field:disabled + .custom-checkbox__content {
   opacity: 0.4;

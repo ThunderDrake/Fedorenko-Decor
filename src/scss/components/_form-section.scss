@@ -1,0 +1,44 @@
+.form-section {
+  margin-bottom: 200px;
+
+  &__header {
+    margin-bottom: 72px;
+    border-bottom: 1px solid var(--color-light);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-light);
+  }
+
+  &__title {
+    margin: 0 auto 24px;
+    max-width: 80%;
+    font-size: 40px;
+    line-height: 125%;
+    letter-spacing: 0.1em;
+
+    @include small-tablet {
+      max-width: none;
+      font-size: 32px;
+    }
+
+    @include mobile {
+      margin-bottom: 16px;
+      font-size: 28px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 135%;
+    letter-spacing: 0.15em;
+
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+
+  @include mobile {
+    margin-bottom: 145px;
+  }
+}

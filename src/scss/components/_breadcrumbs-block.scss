@@ -1,0 +1,39 @@
+.breadcrumbs-block {
+  &__list {
+    display: flex;
+    align-items: center;
+
+    &-item {
+      &:not(:last-child) {
+        position: relative;
+        margin-right: 16px;
+        padding-right: 20px;
+
+        &::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 50%;
+          width: 4px;
+          height: 2px;
+          background-color: var(--color-light);
+          transform: translateY(50%);
+        }
+      }
+
+      &:last-child {
+        & > span {
+          color: #636363;
+        }
+      }
+    }
+  }
+
+  &__item {
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-light);
+  }
+}

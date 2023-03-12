@@ -1,22 +1,13 @@
 .gallery {
   position: relative;
-  padding-bottom: 96px;
+  margin-bottom: 24px;
   text-transform: uppercase;
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 80px;
-    width: 100vw;
-    height: 1px;
-    background-color: var(--color-light);
-  }
 
   &__title-text {
     position: relative;
-    padding-bottom: 64px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--color-light);
+    padding-bottom: 24px;
     width: 100%;
     font-weight: 400;
     font-size: 40px;
@@ -30,6 +21,8 @@
     }
 
     @media screen and (max-width: 699px) {
+      margin-bottom: 16px;
+      padding-bottom: 8px;
       font-size: 24px;
     }
   }

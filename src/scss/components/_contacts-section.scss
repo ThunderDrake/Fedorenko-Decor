@@ -1,0 +1,112 @@
+.contacts-section {
+  margin-bottom: 200px;
+  padding-top: 40px;
+
+  &__container {
+    display: grid;
+    column-gap: 16px;
+    grid-template-columns: repeat(18, 1fr);
+
+    @include small-tablet {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__image-wrapper {
+    grid-column: span 11;
+  }
+
+  &__content {
+    grid-column: 13/19;
+
+    @include small-tablet {
+      margin-bottom: 72px;
+    }
+
+    @include mobile {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 1em;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 150%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-light);
+
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+
+  &__descr {
+    margin-bottom: 98px;
+    font-size: 14px;
+    line-height: 300%;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-light);
+
+    @include small-tablet {
+      margin-bottom: 40px;
+    }
+
+    @include mobile {
+      margin-bottom: 32px;
+      font-size: 12px;
+    }
+  }
+
+  &__links {
+    @include small-tablet {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 375px) {
+      flex-direction: column;
+    }
+  }
+
+  &__button {
+    position: relative;
+    font-weight: 400;
+
+    &-wrapper {
+      position: relative;
+      width: max-content;
+
+      &:not(:last-child) {
+        margin-bottom: 46px;
+
+        @include small-tablet {
+          margin-right: 72px;
+          margin-bottom: 0;
+        }
+
+        @media (max-width: 375px) {
+          margin-right: 0;
+          margin-bottom: 16px;
+        }
+      }
+    }
+
+    &-icon {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      fill: var(--color-light);
+      transform: translateX(100%);
+    }
+  }
+
+  @include mobile {
+    margin-bottom: 120px;
+  }
+}

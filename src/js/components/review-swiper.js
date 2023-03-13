@@ -1,7 +1,7 @@
 import Swiper from 'swiper/bundle';
-const sliderSectionContainer = document.querySelector('.review__container');
-
-let slidesOffset;
+const sliderSectionContainer = document?.querySelector('.review__container');
+if (sliderSectionContainer) {
+  let slidesOffset;
 
 if(window.matchMedia('(max-width: 768px)').matches) {
   slidesOffset = 80;
@@ -38,3 +38,5 @@ const swiper = new Swiper('.review__slider',{
 
 
 });
+
+}

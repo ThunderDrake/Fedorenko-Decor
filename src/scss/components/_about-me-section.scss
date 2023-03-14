@@ -1,0 +1,139 @@
+.about-me {
+  margin-bottom: 20px;
+
+  &__title {
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--color-light);
+    padding-bottom: 40px;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 125%;
+    letter-spacing: 0.15em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-light);
+
+    @include small-tablet {
+      font-size: 36px;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    gap: 40px 16px;
+
+    @include small-tablet {
+      grid-template-columns: repeat(8, 1fr);
+      row-gap: 0;
+    }
+
+    @include mobile {
+      display: block;
+    }
+  }
+
+  &__col {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 300%;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-light);
+
+    &--first {
+      grid-column: span 5;
+
+      p {
+        margin: 0;
+      }
+
+      @include small-tablet {
+        grid-column: span 4;
+        grid-row: 1;
+      }
+
+      @include mobile {
+        margin-bottom: 32px;
+      }
+    }
+
+    &--second {
+      grid-column: span 6;
+
+      @include small-tablet {
+        grid-column: 6/last;
+        grid-row: span 2;
+      }
+
+      @include mobile {
+        margin-bottom: 32px;
+      }
+    }
+  }
+
+  &__exp {
+    display: flex;
+    flex-direction: column;
+    grid-column: 12 / last;
+    max-width: 145px;
+
+    &-text {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 140%;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--color-light);
+
+      @include mobile {
+        font-size: 12px;
+      }
+    }
+
+    &-number {
+      display: inline-block;
+      margin-bottom: 10px;
+      font-size: 96px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--color-light);
+
+      @include mobile {
+        font-size: 56px;
+      }
+    }
+
+    @include small-tablet {
+      grid-column: span 4;
+      grid-row: 2;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__big-image {
+    grid-column: span 11;
+
+    @include small-tablet {
+      grid-column: span 5;
+      grid-row: 3;
+    }
+
+    @include mobile {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__small-image {
+    grid-column: 12 / last;
+
+    @include small-tablet {
+      grid-column: 6/last;
+      grid-row: 3;
+    }
+  }
+
+  @include mobile {
+    margin-bottom: 120px;
+  }
+}

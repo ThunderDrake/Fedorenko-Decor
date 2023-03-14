@@ -7,7 +7,9 @@
   <div class="site-container">
     @include('partials/header.html')
     <main class="main">
-      @include('partials/breadcrumbs.html')
+      @include('partials/inner-header.html', {
+        "page": "Условия аренды"
+      })
       @include('partials/conditions-package.html')
       @include('partials/conditions-package.html')
       @include('partials/conditions-package.html')

@@ -1,0 +1,108 @@
+.activity__video {
+  margin-top: 32px;
+  margin-bottom: 200px;
+  width: 100%;
+  height: 100%;
+
+  @media screen and (max-width: 800px) {
+    margin-bottom: 120px;
+  }
+}
+
+.blinding {
+  margin-bottom: 48px;
+  text-transform: uppercase;
+  color: var(--color-light);
+
+  &__title-text {
+    margin-bottom: 26px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    text-align: center;
+
+    @media screen and (max-width: 500px) {
+      margin-bottom: 8px;
+      font-size: 24px;
+    }
+  }
+
+  &__img-block {
+    position: relative;
+    display: grid;
+    grid-template-areas:
+      "E D A"
+      "E D A"
+      "E D A"
+      "E B A"
+      "C B A"
+      "C B A";
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top: 1px solid var(--color-light);
+    padding: 0;
+    padding-top: 39px;
+    gap: 8px;
+
+    @media screen and (max-width: 1000px) {
+      grid-template-areas:
+        "E D"
+        "E D"
+        "E A"
+        "C A"
+        "C A"
+        "B A"
+        "B A";
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 500px) {
+      padding-top: 15px;
+    }
+  }
+
+  &__pic {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__pic1 {
+    grid-area: A;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__pic2 {
+    grid-area: B;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__pic3 {
+    grid-area: C;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__pic4 {
+    grid-area: D;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__pic5 {
+    grid-area: E;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 800px) {
+    margin-bottom: 24px;
+  }
+}

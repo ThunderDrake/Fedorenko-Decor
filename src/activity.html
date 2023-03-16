@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      @include('partials/inner-header.html', {
+        "page": "Ивенты"
+      })
+      <div class="container">
+        <video controls width="1575" height="900" class="activity__video">
+          <source src="test-video.mp4">
+        </video>
+      </div>
+      @include('partials/blinding.html')
+      @include('partials/clab.html')
+      @include('partials/activity-pcg.html')
+      @include('partials/activity-pcg.html')
+      @include('partials/activity-pcg.html')
+      <div class="container activity__container">
+        <picture class="activity__picture">
+          <source srcset="img/activity-pic.webp" type="image/webp">
+          <img loading="lazy" src="img/activity-pic.png" class="activity__piciture1" width="1575" height="1043" alt="Красивейшая свадьба">
+        </picture>
+      </div>
+      @include('partials/review.html')
+      @include('partials/ceremony.html')
+    </main>
+    @include('partials/footer.html')
+  </div>
+</body>
+
+</html>

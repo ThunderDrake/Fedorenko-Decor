@@ -23,6 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	});
   }
-  console.log('fdfdfdffdf');
+
 
 });

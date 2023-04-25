@@ -1,0 +1,221 @@
+.catalog-furniture {
+  margin-bottom: 200px;
+
+  &__elem {
+    border: 1px solid var(--color-light);
+    padding: 24px;
+    width: 248px;
+    height: 352px;
+
+    &_pic {
+      margin-bottom: 17px;
+    }
+
+    &_name {
+      margin-bottom: 8px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0.1em;
+      text-align: left;
+      text-transform: uppercase;
+      color: var(--color-light);
+    }
+
+    &_cost {
+      margin-bottom: 20px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0.1em;
+      text-align: left;
+      text-transform: uppercase;
+      color: var(--color-light);
+    }
+
+    &-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid var(--color-light);
+      border-radius: 20px;
+      width: 160px;
+      height: 32px;
+      background-color: var(--color-off-black);
+
+      &_counter {
+        display: none;
+        padding-right: 4px;
+        padding-left: 8px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0.15em;
+        text-align: left;
+        text-transform: uppercase;
+        color: var(--color-light);
+      }
+
+      &_plus {
+        display: none;
+        border: 1px solid var(--color-light);
+        border-radius: 16px;
+        width: 32px;
+        height: 32px;
+        color: var(--color-light);
+        background-color: var(--color-off-black);
+
+        &:hover {
+          background-color: var(--color-dire-wolf);
+          cursor: pointer;
+        }
+      }
+
+      &_minus {
+        display: none;
+        border: 1px solid var(--color-light);
+        border-radius: 16px;
+        padding-right: 4px;
+        padding-left: 4px;
+        width: 32px;
+        height: 32px;
+        color: var(--color-light);
+        background-color: var(--color-off-black);
+
+        &:hover {
+          background-color: var(--color-dire-wolf);
+          cursor: pointer;
+        }
+      }
+
+      &__container {
+        display: flex;
+      }
+
+      &_text {
+        padding-left: 5px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0.15em;
+        text-align: left;
+        text-transform: uppercase;
+        color: var(--color-light);
+      }
+
+      &:hover {
+        background-color: var(--color-dire-wolf);
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--color-light);
+    padding: 8px;
+    width: 330px;
+
+    &-item {
+      display: flex;
+      padding-top: 16px;
+
+      &__counter {
+        padding-bottom: 16px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0.1em;
+        text-align: left;
+        color: #636363;
+
+        @media screen and (max-width: 900px) {
+          margin-left: 8px;
+          padding-bottom: 0;
+        }
+      }
+
+      &__name {
+        padding-top: 16px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0.1em;
+        text-align: left;
+        text-transform: uppercase;
+        color: var(--color-light);
+
+        @media screen and (max-width: 900px) {
+          padding-top: 0;
+          padding-left: 24px;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        .catalog-furniture__menu-item__name {
+          text-decoration: underline;
+        }
+
+        .catalog__arrow {
+          display: block;
+        }
+      }
+
+      @media screen and (max-width: 900px) {
+        margin-top: 24px;
+        padding-top: 0;
+      }
+    }
+
+    @media screen and (max-width: 900px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-bottom: 72px;
+      border-right: none;
+      padding-top: 16px;
+      width: 100%;
+    }
+  }
+}
+
+.catalog__arrow {
+  display: none;
+  margin-top: 10px;
+  color: var(--color-light);
+  transform: rotate(45deg);
+}
+
+.catalog__arrow_button {
+  fill: var(--color-light);
+}
+
+.conditions-pcg--noimg {
+  margin-bottom: 200px;
+}
+
+.catalog__button__hide {
+  display: none;
+}
+
+.catalog__button__show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

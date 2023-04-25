@@ -1,0 +1,12 @@
+.inner-header-furniture {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__button {
+  width: 120px;
+  height: 120px;
+  font-size: 10px;
+  color: var(--color-light);
+  background-color: var(--color-of-black);
+}

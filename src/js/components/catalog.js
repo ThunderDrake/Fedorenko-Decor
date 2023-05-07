@@ -9,6 +9,7 @@ if (catalogButton && catalogCounter && catalogPlus && catalogMinus) {
   for (let j = 0; j < catalogButton.length; j++){
     catalogCounterNumber[j] = 1;
   }
+
   for (let i = 0; i < catalogButton.length; i++) {
     catalogButton[i].addEventListener('click', () => {
       catalogCounter[i].classList.add('catalog__button__show');
@@ -32,7 +33,7 @@ if (catalogButton && catalogCounter && catalogPlus && catalogMinus) {
         catalogPlus[i].classList.remove('catalog__button__show');
         catalogMinus[i].classList.remove('catalog__button__show');
         catalogButton[i].classList.remove('catalog__button__hide');
-        console.log('fdfdfdffdf');
+
       }
     });
   }

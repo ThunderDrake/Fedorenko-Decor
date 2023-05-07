@@ -1,0 +1,47 @@
+.catalog-furniture__elem-container__swiper {
+  width: 248px;
+
+  @media screen and (max-width: 591px) {
+    width: 195px;
+  }
+}
+
+.itemcard__slider-slide {
+  width: 248px;
+
+  @media screen and (max-width: 591px) {
+    width: 195px;
+  }
+}
+
+.itemcard__swiper__controls {
+  @media screen and (max-width: 840px) {
+    position: static;
+    justify-content: center;
+    margin-top: 16px;
+  }
+}
+
+.itemcard__nav-button--r-margin {
+  margin-right: 32px;
+
+  @media screen and (max-width: 591px) {
+    margin-right: 16px;
+  }
+}
+
+.itemcard__slider__title {
+  width: 1600px;
+
+  @media screen and (max-width: 1630px) {
+    width: calc(100vw - 45px);
+  }
+
+  @media screen and (max-width: 762px) {
+    width: calc(100vw - 90px);
+  }
+
+  @media screen and (max-width: 576px) {
+    width: calc(100vw - 50px);
+  }
+}

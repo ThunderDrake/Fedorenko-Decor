@@ -29,8 +29,8 @@ import { mobileCheck } from "./functions/mobile-check";
 // import { enableScroll } from './functions/enable-scroll';
 
 // Реализация модального окна
-// import GraphModal from 'graph-modal';
-// const modal = new GraphModal();
+import GraphModal from 'graph-modal';
+const modal = new GraphModal();
 
 // Реализация табов
 // import GraphTabs from 'graph-tabs';
